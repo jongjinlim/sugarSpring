@@ -21,6 +21,7 @@ public class HelloBoot2Application {
 	public static void main(String[] args) {
 		GenericApplicationContext applicationContext = new GenericApplicationContext();
 		applicationContext.registerBean(HelloController.class);
+		applicationContext.registerBean(SimpleHelloService.class);
 		applicationContext.refresh();	// 초기화 작업
 
 		ServletWebServerFactory serverFactory = new TomcatServletWebServerFactory();
