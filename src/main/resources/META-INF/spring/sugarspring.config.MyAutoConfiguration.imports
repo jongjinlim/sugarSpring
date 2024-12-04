@@ -1,3 +1,4 @@
+sugarspring.config.autoconfig.PropertyPlaceholderConfig
 sugarspring.config.autoconfig.TomcatWebServerConfig
 sugarspring.config.autoconfig.JettyWebServerConfig
 sugarspring.config.autoconfig.DispatcherServletConfig
