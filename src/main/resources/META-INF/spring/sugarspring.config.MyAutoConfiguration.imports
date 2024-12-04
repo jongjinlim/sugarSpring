@@ -1,2 +1,3 @@
-sugarspring.config.autoconfig.DispatcherServletConfig
 sugarspring.config.autoconfig.TomcatWebServerConfig
+sugarspring.config.autoconfig.JettyWebServerConfig
+sugarspring.config.autoconfig.DispatcherServletConfig
