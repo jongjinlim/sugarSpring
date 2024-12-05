@@ -5,10 +5,12 @@ import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactor
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import sugarspring.config.ConditionalMyOnClass;
+import sugarspring.config.EnableMyAutoConfigurationProperties;
 import sugarspring.config.MyAutoConfiguration;
 
 @MyAutoConfiguration
 @ConditionalMyOnClass("org.apache.catalina.startup.Tomcat")
+@EnableMyAutoConfigurationProperties(ServerProperties.class)
 public class TomcatWebServerConfig {
 
 	@Bean("tomcatWebServerFactory")

@@ -1,7 +1,8 @@
 package sugarspring.config.autoconfig;
 
-import org.springframework.beans.factory.annotation.Value;
+import sugarspring.config.MyConfigurationProperties;
 
+@MyConfigurationProperties(prefix = "server")
 public class ServerProperties {
 
 	private String contextPath;
