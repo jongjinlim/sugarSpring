@@ -2,11 +2,11 @@ package sugarspring.helloboot2;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jdbc.core.JdbcTemplate;
-import sugarspring.config.MySpringBootApplication;
 
 
-@MySpringBootApplication
+@SpringBootApplication
 public class HelloBoot2Application {
 	private final JdbcTemplate jdbcTemplate;
 
