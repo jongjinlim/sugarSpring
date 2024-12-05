@@ -14,7 +14,7 @@ public class HelloApiTest {
 	void helloApi() {
 		TestRestTemplate rest = new TestRestTemplate();
 
-		ResponseEntity<String> res = rest.getForEntity("http://localhost:8080/app/hello?name={name}", String.class, "Spring");
+		ResponseEntity<String> res = rest.getForEntity("http://localhost:9090/app/hello?name={name}", String.class, "Spring");
 
 		// 응답 검증
 		// status code 200
@@ -29,7 +29,7 @@ public class HelloApiTest {
 	void failsHelloApi() {
 		TestRestTemplate rest = new TestRestTemplate();
 
-		ResponseEntity<String> res = rest.getForEntity("http://localhost:8080/app/hello?name=", String.class);
+		ResponseEntity<String> res = rest.getForEntity("http://localhost:9090/app/hello?name=", String.class);
 
 		// 응답 검증
 		// status code 200
