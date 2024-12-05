@@ -10,6 +10,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Import(MyConfigurationPropertiesImportSelector.class)
-public @interface EnableMyAutoConfigurationProperties {
+public @interface EnableMyConfigurationProperties {
 	Class<?> value();
 }
